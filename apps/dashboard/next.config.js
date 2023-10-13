@@ -15,6 +15,7 @@ const nextConfig = {
   transpilePackages: ['@chaindesk/lib', '@chaindesk/emails'],
   experimental: {
     outputFileTracingRoot: path.join(__dirname, '../../'),
+    outputFileTracingExcludes: ['**canvas**'] // test this: https://stackoverflow.com/questions/76449953/node-canvas-on-vercel-serverless-function-serverless-function-exceeds-the-maxi
   },
   // eslint: {
   //   dirs: ['pages', 'utils', 'components', 'hooks', 'types', 'widgets'],
